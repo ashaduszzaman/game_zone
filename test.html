@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>influencer-gears</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .find{
+            width: 20px;
+        }
+        .shopingcard{
+            width: 20px;
+        }
+        .rightarrow{
+            width: 20px;
+        }
+        .class-nav{
+            margin: 40px;
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+        }
+        nav>ul{
+            display: flex;
+            list-style: none;
+        }
+        ul>li{
+            margin-right: 20px;
+        }
+        ul>li>a{
+            text-decoration: none;
+            color: black;
+            font-weight: 600;
+        }
+        section-journey{
+            margin: 40px;
+            display: flex;
+            justify-content:space-between;
+        }
+        .title-side{
+            width: 400px;
+        }
+        p{
+            margin-top: 10px;
+        }
+        .btn-journey{
+            margin-top: 20px;
+            padding: 10px;
+            color: beige;
+            background-color: rgb(226, 10, 82);
+            border-radius: 30px;
+            border: none;
+        }
+        .class-camera{
+            width: 400px;
+        }
+        /* logo design */
+        .class-logo{
+            display: flex;
+             margin-left: 70px; 
+        }
+        .logo1{
+            display: flex;
+        }
+        .logo2{
+            display: flex;
+        } 
+        
+        .div-img{
+            width: 200px;
+        }
+        .pc{
+            width: auto;
+            text-align: center;
+            margin-top: 70px;
+            margin-bottom: 20px;
+        }
+        .collection{
+            display: flex;
+            flex-direction: column;
+            margin-left: 80px;
+            justify-content: center;
+        }
+        .collection1{
+            display: flex;
+        }
+        .collection2{
+            margin-top: 40px;
+            display: flex;
+        }
+        .collection3{
+            margin-top: 40px;
+            display: flex;
+        }
+
+        .collection-img{
+            width: 500px;
+        }
+        .seemore{
+            width: auto;
+            text-align: right;
+        }
+        .sm{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 800;
+            margin: 20px;
+            margin-right: 120px;
+            color: red;
+        }
+        .footer{
+            display: flex;
+            margin: 0px 100px 20px 100px;
+        }
+        .footer-text{
+            margin-top: 20px;
+            margin-left: 40px;
+            width: 450px;
+        }
+        footer-section{
+
+            text-align: center;
+        }
+        .fs{
+            color: beige;
+            padding: 80px;
+            width: auto;
+            /* height: 80px; */
+            background-color: darkblue;
+        }
+        @media screen and (max-width:576px){
+            .class-nav, .class-logo, .collection1, 
+            .collection2, .collection3{
+                flex-direction: column;
+            }
+            section-journey, .footer{
+                flex-direction: column-reverse;
+            }
+            
+
+        }
+        /* tablet or medium devices */
+        @media screen and (min-width:576px) and (max-width:960px){
+            .class-nav, .class-logo, .collection1, 
+            .collection2, .collection3{
+                flex-direction: column;
+            }
+            section-journey, .footer{
+                flex-direction: column-reverse;
+            }
+      }
+
+    </style>
+</head>
+<body>
+    <header class="class-nav">
+        <h3>Influencer products</h3>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">Sign up</a></li>
+                <li><a href="">Log In</a></li>
+                <li><a href=""><img class="find" src="/logos/search.png" alt=""></a></li>
+                <li><a href=""><img class="shopingcard" src="/logos/shopingcard.png" alt=""></a></li>
+            </ul>
+        </nav>
+    </header>   
+    <section-journey class="class-journey">
+        <div class="title-side">
+            <h1>Start your Journey as Influencer</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab omnis, molestiae numquam suscipit.</p>
+            <button class="btn-journey">Preebook now</button>
+        </div>
+        <div class="camera">
+            <img class="class-camera" src="/images/main-camera.png" alt="">
+        </div>
+    </section-journey>
+    <div class="class-logo">
+        <div class="logo1">
+            <div class="div-img"><img class="logo-img" src="/logos/Alibaba.svg" alt=""></div>
+            <div class="div-img"><img class="logo-img" src="/logos/Amazon.svg" alt=""></div>
+            <div class="div-img"><img class="logo-img" src="/logos/Daraz.pk Logo.svg" alt=""></div>
+        </div>
+        <div class="logo2">
+            <div class="div-img"><img class="logo-img" src="/logos/Ebay.svg" alt=""></div>
+            <div class="div-img"><img class="logo-img" src="/logos/Rakuten.svg" alt=""></div>
+            <div class="div-img"><img class="logo-img" src="/logos/Walmart.svg" alt=""></div>
+            <div class="div-img"><img class="logo-img" src="/logos/Target.svg" alt=""></div>
+        </div>
+    </div>
+        <div class="pc">
+            <h2>Popular Collection</h2>
+        </div>
+
+        <div class="collection">
+        <div class="collection1">
+            <div class="collection-img">
+                <img class="col-img" src="/images/tripod.png" alt="">
+                <h2>Flex Tripod</h2>
+                <h3>$50.48</h3>
+                <p>Worldwide Shifting <br> available
+                <br>Buyers protection possible!</p>
+            </div>
+            <div class="collection-img">
+                <img class="col-img" src="/images/mic.png" alt="">
+                <h2>Flex Tripod</h2>
+                <h3>$50.48</h3>
+                <p>Worldwide Shifting <br> available
+                <br>Buyers protection possible!</p>
+            </div>
+            <div class="collection-img">
+                <img class="col-img" src="/images/airpod.png" alt="">
+                <h2>Flex Tripod</h2>
+                <h3>$50.48</h3>
+                <p>Worldwide Shifting <br> available
+                <br>Buyers protection possible!</p>
+            </div>
+        </div>    
+        <div class="collection2">
+            <div class="collection-img">
+                <img class="col-img" src="/images/drone.png" alt="">
+                <h2>Flex Tripod</h2>
+                <h3>$50.48</h3>
+                <p>Worldwide Shifting <br> available
+                <br>Buyers protection possible!</p>
+            </div>
+            <div class="collection-img">
+                <img class="col-img" src="/images/lights.png" alt="">
+                <h2>Flex Tripod</h2>
+                <h3>$50.48</h3>
+                <p>Worldwide Shifting <br> available
+                <br>Buyers protection possible!</p>
+            </div>
+            <div class="collection-img">
+                <img class="col-img" src="/images/setup.png" alt="">
+                <h2>Flex Tripod</h2>
+                <h3>$50.48</h3>
+                <p>Worldwide Shifting <br> available
+                <br>Buyers protection possible!</p>
+            </div>
+        </div>
+        <div class="collection3">
+            <div class="collection-img">
+                <img class="col-img" src="/images/camera.png" alt="">
+                <h2>Flex Tripod</h2>
+                <h3>$50.48</h3>
+                <p>Worldwide Shifting <br> available
+                <br>Buyers protection possible!</p>
+            </div>
+            <div class="collection-img">
+                <img class="col-img" src="/images/single-light.png" alt="">
+                <h2>Flex Tripod</h2>
+                <h3>$50.48</h3>
+                <p>Worldwide Shifting <br> available
+                <br>Buyers protection possible!</p>
+            </div>
+            <div class="collection-img">
+                <img class="col-img" src="/images/action.png" alt="">
+                <h2>Flex Tripod</h2>
+                <h3>$50.48</h3>
+                <p>Worldwide Shifting <br> available
+                <br>Buyers protection possible!</p>
+            </div>
+        </div>
+    </div>
+    <section-more class="seemore">
+        <h3 class="sm">See More ==></h3>
+    </section-more>
+    <footer class="footer">
+        <div>
+            <img src="/images/gear.png" alt="">
+        </div>
+        <div class="footer-text">
+            <h1>Featured products as one place</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente ex non quo autem adipisci tenetur impedit aut corporis voluptas nam.</p>
+            <button class="btn-journey">Join now</button>
+        </div>
+    </footer>
+    <footer-section>
+        <div class="fs">
+            <h2 class="fs-title">Influencer products</h2>
+            <p>Copyright @ 2020 influencer products <br>All rights reserved</p>
+        </div>
+    </footer-section>
+</body>
+</html>

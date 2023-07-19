@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamer</title>
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,700&family=Work+Sans:wght@400;500;600;800&display=swap');
+        
+        *{
+            margin: 0;
+            font-family: 'Work Sans', sans-serif;
+        }
+        .logo{
+            width: 40px;
+        }
+        span{
+            margin-left: 10px;
+            color: #F948B2 ;
+        }
+        
+        .class-nav{
+            width: 1440px;
+            margin: 40px;
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+        }
+        nav>ul{
+            display: flex;
+            list-style: none;
+        }
+        ul>li{
+            margin-right: 20px;
+        }
+        ul>li>a{
+            text-decoration: none;
+            color: black;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        div>li>a{
+            text-decoration: none;
+            color: black;
+            font-size: 24px;
+            font-weight: 600;
+            text-align: center;
+        }
+        .div-mn{
+            display: flex;
+            /* position: absolute;  */
+            /* top: 5px; */
+            padding: 10px;
+            border-radius: 10px;
+            width: 240px;
+           
+            background-color: rgb(209, 209, 200);
+        }
+        .Utube, .tiktok{
+            margin-left: 10px;
+            width: 20px;
+        }
+
+        .img1, .img2, .img3{
+            color: #534C64;
+            font-family: Work Sans;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            text-transform: lowercase;
+        }
+        .main-1, .main-2, .main-4, .main-5,.main-6,.main-7{
+            margin-top: 50px;
+            width: 1200px;
+            margin-left: 40px;
+            display: flex;
+            justify-content:space-between;
+        }
+        .main-13{
+            margin-left: 40px;  
+        }
+        .img-R1{
+            width: 500px;
+        }
+        .btn-1, .btn-2, .btn-11{
+            margin-top: 20px;
+            font-weight: 500;
+            color: #fff;
+            background-color: #F948B2;
+            border-radius: 20px;
+            border: 0;
+            padding: 10px;
+        }
+        .btn-2{
+            background-color: #4EC5F7;
+        }
+        .btn-11{
+            font-size: large;
+            padding: 21px 40px;
+            border-radius: 30px;
+            margin-bottom: 20px;
+        }
+        .header-title1{
+            color: #0B0223;
+            text-align: center;
+            font-family: Work Sans;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            text-transform: uppercase;
+        }
+        .header-title44{
+            color: #0B0223;
+            text-align: center;
+            font-family: Work Sans;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+
+        .header-title2, .header-title22{
+            text-align: center;
+            font-family: Work Sans;
+            font-size: 95px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            text-transform: uppercase;
+            background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .sp-main3{
+            color: #F948B2;
+        }
+        .header-title22{
+            text-align: right;
+            font-family: Work Sans;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+        .img-pic1, .img-pic2, .img-pic3{
+            margin-right: 10px;
+            margin-top: 10px;
+            width: 20px;
+        }
+        
+        .header-title2{
+            
+        }
+        .header-right2{
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            width: 500px;
+        }
+        .main-3{
+            margin-top: 40px;
+            display: flex;
+        }
+        .para-2, .para-3{
+            color: #534C64;
+            text-align: right;
+            font-family: Work Sans;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px; /* 166.667% */
+        }
+        .para-3{
+            text-align:center;
+            font-size: 12px;
+        }
+        .header-title-1{
+            color: #534C64;
+        }
+
+        .collection{
+
+            margin: 20px;
+            display: flex;
+        }
+        .col-img{
+            width: 340px;
+            height: 300px;
+        }
+        .collection-img1,.collection-img2,.collection-img3,.collection-img4{
+            width: 400px;
+        }
+        .main3-title{
+            margin-top: 40px;
+            text-align: center;
+            font-size: 30px;
+        }
+        .htitle{
+            color: #0B0223;
+        }
+        .header-title4{
+            position: relative;
+            width: 500px;
+            left: 100px;
+            top: 200px;
+        }
+        /*.img-R4*/
+        .header-right4{
+            position: relative;
+            left: 500px;
+
+        }
+        .img-R66{
+            position: relative;
+            top: -280px;
+            left: -90px;
+        }
+        .main-5{
+            display: flex;
+            color: beige;
+            padding: 80px;
+            width: auto;
+            /* height: 80px; */
+            border: 1px solid #000;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+
+        }
+        .fs-side{
+            display: flex;
+        }
+        .fs-title{
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .fs-para, .fs-side{
+            width: 680px;
+            height: 120;
+            margin-bottom: 20px;
+        }
+        .fs-left-side>p, .fs-right-side>p{
+            padding-top: 10px;
+        }
+        .fs-right-side{
+            width: 680px;
+            text-align: right;
+        }
+        .fs-img{
+            width: 500px;
+        }
+        .main-4{
+            height: 750px;
+        }
+        .main-6{
+            display: flex;
+            flex-direction: column;
+            /*width: 1200px;*/
+            margin-bottom: 40px;
+            font-size: 20px;
+        }
+        .top-img{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: 30px;
+
+        }
+        
+        .topimg:hover{
+            border: solid 1px palevioletred;
+            border-radius: 20px;
+        }
+        .footer{
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0px 100px 20px 100px;
+            background-color: #0B0223;
+        }
+        .fttitle{
+            margin-top: 100px;
+        }
+        .footer-text, .footer-text-bottom{
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 20px;
+            gap: 20px;
+            display: flex;
+        }
+        .footer-text-bottom{
+            font-size: 20px;
+            margin-top: 20px;
+            gap: 20px;
+            display: flex;
+            margin-bottom: 40px;
+        }
+        .fs11{
+            margin: 20px;
+            display: flex;
+            margin-bottom: 40px;
+        }
+        .img-ft{
+            
+            width: 40px;
+            padding: 20px;
+        }
+        .btm-ft{
+            margin-bottom: 50px;
+        }
+        
+        @media screen and (max-width:426px){
+            .class-nav,.main-1, .main-2,  .main-3, .collection, .main-4, .main-5,.main-6,.main-7,.footer-text, .footer-text-bottom{
+                flex-direction: column;
+                margin-left: 5px;
+                width: 430px;
+            }
+            .main-1{
+                flex-direction: column-reverse;
+            }
+
+        }
+        }
+    </style>
+</head>
+<body>
+    <header class="class-nav">
+        <h1><a href=""><img class="logo" src="/images/Frame.png" alt=""></a><span class="spn">G</span>amer</h1>
+        <nav>
+            <ul>
+                <li><a href="">About us</a></li>
+                <li><a href="">Developers</a></li>       
+                <div class="div-mn">
+                    <li><a href="">Follow Us On</a></li>
+                    <li><a href=""><img class="Utube" src="/images/youtube.png" alt=""></a></li>
+                    <li><a href=""><img class="tiktok" src="/images/tiktok.png" alt=""></a></li>
+                </div>
+            </ul>
+        </nav>
+    </header> 
+    <section class="main-1">
+            <div class="header-left">
+                <h3 class="header-title1">Play Like The</h3>
+                <h1 class="header-title2">G.O.A.T.</h1>
+                <div class="img1"><img class="img-pic1" src="/images/utube.png" alt="">1-Click instant play</div>
+                <div class="img2"><img class="img-pic2" src="/images/download.png" alt="">No Download</div>
+                <div class="img3"><img class="img-pic3" src="/images/people.png" alt="">1000s of supported online games</div>
+                <div class="btn12">
+                    <button class="btn-1">SIGN IN</button>
+                    <button class="btn-2">GO ROGUE</button>
+                </div>
+            </div>
+            <div class="header-right">
+                <div><img class="img-R1" src="/images/Group 18.png" alt=""></div>
+            </div>
+    </section>  
+    <section class="main-2">
+        <div class="header-left2">
+            <div><img class="img-R1" src="/images/pngwing 4.png" alt=""></div>
+        </div>
+        <div class="header-right2">
+            <!-- <h3 class="header-title1">Play Like The</h3> -->
+            <h1 class="header-title22">We are gamer</h1>
+            <p class="para-2">An international digital games and entertainment <br> company. We develop, publish and distribute multiplayer <br> mobile games. We reach over 400 million players each <br> month and our audience keeps growing.</p> 
+            <div class="btn12">
+                <button class="btn-11">NO MORE</button>
+            </div>
+            <h5 class="header-title-1">Our purpose...</h5>
+            <h3 class="header-title-2">“unleash the gamer in everyone”</h3>
+        </div>
+    </section>  
+    <section class="main-13">
+    <h3 class="main3-title">Online Games<span class="sp-main3">Funny Videos</span></h3>
+    <p class="para-3">A Collection of Hilarious Videos to Brighten Your Day</p>
+    <div class="main-3 collection">
+        <div class="collection-img1">
+            <img class="col-img" src="/images/Rectangle 4.png" alt="">
+            <p>No Download. No Installs. Play games <br> Instantly on Gamer.</p>
+        </div>
+        <div class="collection-img2">
+            <img class="col-img" src="/images/Rectangle 5.png" alt="">
+            <p>Did you score? #unblockedgames <br> #school</p>
+        </div>
+        <div class="collection-img3">
+            <img class="col-img" src="/images/Rectangle 7.png" alt="">
+            <p>Breaking game records <br> like OG....</p>
+        </div>
+        <div class="collection-img4">
+            <img class="col-img" src="/images/Rectangle 6.png" alt="">
+            <p>Busted gaming on school laptop, <br> but you are still lit.</p>
+        </div>
+    </div>
+    </section>
+    <section class="main-4">
+        <div class="header-title4">
+            <h3 class="header-title44"><span class="sp-main3">Play Instantly, <br> </span>
+                 No Downloads 
+                 No Installs.</h3>
+        </div>
+        </div>
+        <div class="header-right4">
+            <div><img class="img-R4" src="/images/Rectangle 55.png" alt="">
+            <img class="img-R66" src="/images/Rectangle 66.png" alt=""></div>
+        </div>
+    </section>
+    <section class="main-5">
+        <div class="fs">
+            <div class="fs-title">
+                <h4 class="fs-title">Careers</h4>
+            </div>
+            <div class="fs-para">
+                <p>Gamer is driven to create the best and most fun games for our millions of players all around the world, and we,re always on the lookout for more top talent to join our growing team. If you,d like to help us make great games and be a part of Gamers bright future, we,d love to hear from you.</p>
+            </div>
+            <div class="fs-side">
+                <div class="fs-left-side">
+                    <p>Multimedia Artist +</p>   
+                    <p>Data Engineer +</p>
+                    <p>Adroid Engineer +</p>
+                    <p>Server Developer +</p>
+                    <p>Group Financial Accountant +</p>
+                    <p>Senior User Acuisition Specialist +</p>
+                </div>
+                <div class="fs-right-side">
+                    <p>Lisbon, Portugal </p>
+                    <p>Lisbon, Portugal</p>
+                    <p>Zoetermeer, Netherlands</p>
+                    <p>Lisbon, Portugal</p>
+                    <p>London, United Kingdom</p>
+                    <p> Lisbon, Portugal</p>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <fs-img>
+            <img class="fs-img" src="/images/Group 65.png" alt="">
+        </fs-img>
+    </section>
+    <section class="main-6">
+        <div class="top-img">
+            <div class="topimg div-01"><img src="/images/Rectangle 11.png" alt="">Action Games</div>
+            <div class="topimg div-02"><img src="/images/Rectangle 12.png" alt="">Adventure Games</div>
+            <div class="topimg div-03"><img src="/images/Rectangle 13.png" alt="">Arcade Games</div>
+            <div class="topimg div-04"><img src="/images/Rectangle 14.png" alt="">Educational Games</div>
+            <div class="topimg div-05"><img src="/images/Rectangle 15.png" alt="">Word Games</div>
+        </div>
+    </section>
+    <footer class="footer">
+
+        <div class="fttitle">
+            <h1><a href=""><img class="logo" src="/images/Frame.png" alt=""></a><span class="spn">G</span>amer</h1>
+        </div>
+        <div class="footer-text">
+            <div class="div-ft">Our Story</div>
+            <div class="div-ft">Games</div>
+            <div class="div-ft">Web Games</div>
+            <div class="div-ft">Support</div>
+            <div class="div-ft">My Account</div>
+        </div>
+ 
+
+        <div class="fs11">
+            <div><img class="img-ft" src="/images/twitter_3670211.png" alt=""></div>
+            <div><img class="img-ft" src="/images/facebook_5968764.png" alt=""></div>
+            <div><img class="img-ft" src="/images/utube.png" alt=""></div>
+        </div>
+
+        <div class="footer-text-bottom">
+            <div class="div-ft">Terms and Conditions</div>
+            <div class="div-ft">Privacy Policy</div>
+            <div class="div-ft">Cookie Policy</div>
+            <div class="div-ft">Privacy Settingst</div>
+        </div>
+
+       <div class="btm-ft"> Play Games @ Gamer @ 2000-2023 Gamer Bangladesh</div>
+    </footer>
+</body>
+</html>
